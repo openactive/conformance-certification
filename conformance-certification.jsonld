@@ -37,7 +37,8 @@
       ],
       "rangeIncludes": [
         "skos:Concept"
-      ]
+      ],
+      "@container": "@list"
     },
     {
       "@id": "cert:featureNotImplemented",
@@ -49,7 +50,8 @@
       ],
       "rangeIncludes": [
         "skos:Concept"
-      ]
+      ],
+      "@container": "@list"
     },
     {
       "@id": "cert:opportunityTypeImplemented",
@@ -61,7 +63,8 @@
       ],
       "rangeIncludes": [
         "schema:Class"
-      ]
+      ],
+      "@container": "@list"
     }
   ]
 }
