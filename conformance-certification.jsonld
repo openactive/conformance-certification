@@ -1,0 +1,67 @@
+{
+  "@context": [
+    "https://openactive.io/ns-extension",
+    {
+      "cert": "https://openactive.io/conformance-certification#"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "cert:ConformanceCertificate",
+      "@type": "Class",
+      "label": "ConformanceCertificate",
+      "comment": "A certificate that asserts the service’s conformance to established standards.",
+      "subClassOf": [
+        "schema:EducationalOccupationalCredential"
+      ]
+    },
+    {
+      "@id": "cert:awardedTo",
+      "@type": "Property",
+      "label": "awardedTo",
+      "comment": "The product or service to which this certificate is awarded.",
+      "domainIncludes": [
+        "cert:ConformanceCertificate"
+      ],
+      "rangeIncludes": [
+        "oa:BookingService"
+      ]
+    },
+    {
+      "@id": "cert:featureImplemented",
+      "@type": "Property",
+      "label": "featureImplemented",
+      "comment": "Features implemented by the certified product or service.",
+      "domainIncludes": [
+        "cert:ConformanceCertificate"
+      ],
+      "rangeIncludes": [
+        "skos:Concept"
+      ]
+    },
+    {
+      "@id": "cert:featureNotImplemented",
+      "@type": "Property",
+      "label": "featureNotImplemented",
+      "comment": "Features not implemented by the certified product or service.",
+      "domainIncludes": [
+        "cert:ConformanceCertificate"
+      ],
+      "rangeIncludes": [
+        "skos:Concept"
+      ]
+    },
+    {
+      "@id": "cert:opportunityTypeImplemented",
+      "@type": "Property",
+      "label": "opportunityTypeImplemented",
+      "comment": "The OpenActive opportunity types implemented by the certified product or service.",
+      "domainIncludes": [
+        "cert:ConformanceCertificate"
+      ],
+      "rangeIncludes": [
+        "schema:Class"
+      ]
+    }
+  ]
+}
